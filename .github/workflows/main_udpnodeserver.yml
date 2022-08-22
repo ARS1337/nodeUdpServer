@@ -52,5 +52,5 @@ jobs:
         with:
           app-name: 'udpnodeserver'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_1D1F407CE9AE4936AF2911866E1A6C28 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DC769EBD4165408793B7041A8C180CC9 }}
           package: .
