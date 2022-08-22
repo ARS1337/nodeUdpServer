@@ -43,4 +43,4 @@ server.on("close", function () {
   console.log("Socket is closed !");
 });
 
-server.bind(2222);
+server.bind(process.env.PORT || 2222);
