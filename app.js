@@ -18,7 +18,7 @@ server.on("message", function (msg, info) {
     ` difference is  ${parseInt(Date.now()) - parseInt(msg.toString())}`
   );
 
-  server.send(status, info.port, "localhost", function (error) {
+  server.send(status, info.port, function (error) {
     if (error) {
       client.close();
     } else {
