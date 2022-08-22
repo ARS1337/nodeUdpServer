@@ -13,7 +13,7 @@ client.on('message',function(msg,info){
 console.log('before sending',Date.now())
 
 //sending msg
-client.send(Buffer.from(Date.now().toString()),2222,'localhost',function(error){
+client.send(Buffer.from(Date.now().toString()),2222,'https://nodeudpserver.herokuapp.com/',function(error){
     console.log('buffer sent',Date.now())
   if(error){
     client.close();
